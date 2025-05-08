@@ -1,52 +1,51 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
+import { motion } from 'framer-motion'
 
-export const HeaderContainer = styled.header`
-  position: sticky;
-  top: 30px;
-  left: 0;
+export const HeaderContainer = styled(motion.header)`
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  translate: -50% -50%;
+
+
+  background-color: transparent;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  /* background-color: rgba(0, 0, 0, 0); */
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+
   background-image: linear-gradient(
     137deg,
     rgba(17, 18, 20, 0.75) 4.87%,
     rgba(12, 13, 15, 0.9) 75.88%
   );
+
   backdrop-filter: blur(5px);
   border-radius: 16px;
 
-  padding: 16px;
+  padding: 8px 16px;
   width: 100%;
-  height: 76px;
+  height: 60px;
   margin-top: 30px;
 
   border-style: solid;
   border-color: rgba(36, 36, 39, 0.75);
-  border-width: 4px 3px 3px 3px;
-  img {
-    height: 30px;
-  }
+  border-width: 4px 3px 2px 3px;
 
-  div {
-    width: 100px;
-    display: block;
+  .svg-container {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
 
     h1 {
       margin-left: 10px;
       color: #fff;
-    }
-    h2 {
-      font-family: 'Inter', sans-serif;
-      font-size: 18px;
-      cursor: pointer;
-      color: ${cores.headertxt};
-      font-weight: normal;
+      display: flex;
     }
   }
 `
@@ -63,14 +62,15 @@ export const Nav = styled.nav`
   }
 
   li {
-    &:hover {
-      color: #fff;
-      transition: all 0.3s ease;
+
+    .links{
+      &:hover {
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+      margin-right: 16px;
+      cursor: pointer;
+      color: ${cores.headertxt};
     }
-    margin-right: 16px;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    color: ${cores.headertxt};
   }
 `

@@ -1,17 +1,26 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Section = styled.section`
-  position: relative;
-  min-height: 90vh;
-
-  video {
-    position: fixed;
+export const PrimaryBg = styled(motion.div)`
+    position: relative;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
+    height: 100vh;
+    width: 100%;
     z-index: -1;
-    pointer-events: none; /* impede clique no vídeo */
-  }
+
+    iframe{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        opacity: 0.2;
+        border: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(2px);
+        z-index: -1;
+        border: 1px solid #fff;
+    }
 `
