@@ -3,26 +3,21 @@ import { motion } from 'framer-motion'
 
 export const Card = styled(motion.div)`
   position: relative;
-  background-color: rgb(37, 122, 175);
-  height: 530px;
+  height: 560px;
   border-radius: 12px;
   border: 1px solid #eee;
+  width: 400px;;
+  flex-shrink: 0;
+  margin-right: 38px;
+  border: none;
 
-  video{
+  video {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
   }
-
-  /* &:hover{
-    filter: brightness(50%)
-  } */
-
-  /* border-style: outset; */
-
-  /* box-shadow: -1px -1px 1px 0 inset rgb(37, 122, 175), 1px 1px 0px 0 inset rgb(37, 122, 175); */
 `
 
 export const CardFilter = styled(motion.div)`
