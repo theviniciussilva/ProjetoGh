@@ -1,3 +1,4 @@
+import Trabalhos from "../../pages/Trabalhos"
 import { SectionDiv } from "./style"
 
 const Section = () => {
@@ -5,7 +6,7 @@ const Section = () => {
     return(
 
         <SectionDiv>
-            
+            <Trabalhos/>
         </SectionDiv>
     )
 }

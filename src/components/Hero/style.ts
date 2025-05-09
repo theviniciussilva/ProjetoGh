@@ -2,17 +2,17 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const HeroContainer = styled(motion.div)`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   position: absolute;
-  top: 347px;
-  left: 88px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 `
 export const TextDiv = styled.div`
   display: block;
-  width: 1036px;
+  width: 1000px;
   height: 386px;
 
   color: #fff;
@@ -42,13 +42,12 @@ export const TextDiv = styled.div`
 `
 
 export const ProfileDiv = styled(motion.div)`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    img{
-        height: 500px;
-        border-radius:50%;
-    }
+  img {
+    height: 450px;
+    border-radius: 50%;
+  }
 `

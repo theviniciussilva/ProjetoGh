@@ -5,8 +5,8 @@ const Hero = () => {
 
     return(
         <>
-        <HeroContainer>
-            <TextDiv className="container">
+        <HeroContainer className="container">
+            <TextDiv>
                 <h2>
                     Gh
                 </h2>

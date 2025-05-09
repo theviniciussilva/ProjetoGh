@@ -11,8 +11,8 @@ const Home = ({isActive}: Props) => {
     return(
         <>
             <Transition isActive={isActive}/>
-            <Header/>
             <Hero/>
+            <Header/>
         </>
     )
 }

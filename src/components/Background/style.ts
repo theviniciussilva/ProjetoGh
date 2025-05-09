@@ -7,7 +7,8 @@ export const PrimaryBg = styled(motion.div)`
     left: 0;
     height: 100vh;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
+    box-shadow: 0px -20px 3px 0 inset rgba(0,0,0);
 
     iframe{
         position: absolute;
@@ -15,12 +16,10 @@ export const PrimaryBg = styled(motion.div)`
         left: 50%;
         translate: -50% -50%;
         opacity: 0.2;
-        border: 0;
-        margin: 0;
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(2px);
-        z-index: -1;
-        border: 1px solid #fff;
+        padding: 0;
+        margin: 0;
+        filter: blur(4px);
     }
 `

@@ -5,6 +5,10 @@ export const cores = {
 }
 
 const EstiloGlobal = createGlobalStyle`
+  html{
+    scroll-behavior: smooth;
+  }
+
   *{
   padding: 0;
   margin: 0;

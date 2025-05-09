@@ -8,7 +8,6 @@ export const HeaderContainer = styled(motion.header)`
   left: 50%;
   translate: -50% -50%;
 
-
   background-color: transparent;
 
   display: flex;
@@ -33,9 +32,11 @@ export const HeaderContainer = styled(motion.header)`
   height: 60px;
   margin-top: 30px;
 
-  border-style: solid;
+  box-shadow: -1px -1px 1px 0 inset rgb(216, 26, 26);
+
+  /* border-style: outset;
   border-color: rgba(36, 36, 39, 0.75);
-  border-width: 4px 3px 2px 3px;
+  border-width: 3px 2px 3px 2px; */
 
   .svg-container {
     display: flex;
@@ -46,6 +47,10 @@ export const HeaderContainer = styled(motion.header)`
       margin-left: 10px;
       color: #fff;
       display: flex;
+    }
+
+    img {
+      height: 40px;
     }
   }
 `
@@ -62,8 +67,7 @@ export const Nav = styled.nav`
   }
 
   li {
-
-    .links{
+    .links {
       &:hover {
         color: #fff;
         transition: all 0.3s ease;
